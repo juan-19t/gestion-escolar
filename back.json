@@ -1,6 +1,18 @@
 [
     {
-        "nombreEscuela": "Monseñor Carlos Macagno",
-        "numero": "N° 2056"
+        "usuario": "Fabiana Gonzalez",
+        "contraseña": "1111"
+    },
+    {
+        "usuario": "Susana Martinez",
+        "contraseña": "2222"
+    },
+    {
+        "usuario":"Marta Garcia",
+        "contraseña": "3333"
+    },
+    {
+        "usuario":"Veronica Gimenez",
+        "contraseña":"4444"
     }
 ]

@@ -63,12 +63,15 @@ function calcularPromedioAnual (lista) {
 };
 
 // Declaracion de variables para el formulario de los datos del alumno
+let conteinterTabla = document.querySelector(".table");
 let tabla = document.getElementById("tabla");
 let primerHilera = document.getElementById("primerHilera");
 let botonGuardarAlumno = document.getElementById("boton");
 let hileraConReferencias = document.createElement("tr");
 let ultimaHilera = document.createElement("tr");
 const formularioDatos = document.getElementById("formulario-datos");
+conteinterTabla.style.display="none";
+
 
 // Recopilacion de valores de los input y funcionalidad del submit
 formularioDatos.addEventListener("submit",(e)=>{
@@ -207,10 +210,10 @@ if (listaDeAlumnos2) {
  // Evento para mostrar en pantalla datos, materias y notas del alumno seleccionado en el select
 select.addEventListener('change',(e)=>{
     const resultado = listaDeAlumnos2.find( alumno => alumno.dni === event.target.value );
-    
+    conteinterTabla.style.display="inline-table";
     formularioDatos.style.display="none";
     botonAgregar.style.display="flex";
-    hileraConReferencias.innerHTML=`
+    hileraConReferencias.innerHTML=` 
             <th scope="col" id="nombre1">${resultado.nombreAlumno}</th>
             <th scope="col">Materias</th>
             <th scope="col">Primer trimestre</th>
@@ -256,25 +259,6 @@ select.addEventListener('change',(e)=>{
 botonAgregar.onclick = () => {
     location.reload();
 }
-
-
-// Presentacion con informacion traida desde el documento JSON
-let presentacion = document.getElementById('presentacion');
-let containerPresentacion= document.getElementById('container__presentacion');
-
-fetch('./back.json')
-.then((resp)=> resp.json())
-.then((data)=>{
-
-    data.forEach((datos)=>{
-        presentacion.innerHTML+=`
-                    <h1> Hola! Bienvenido al sistema de gestion escolar del colegio: </h1>
-                    <h1>${datos.nombreEscuela}</h1>
-                    <h1>${datos.numero}</h1>
-        `;                  
-    })
-});
-setTimeout(()=>{limpiarElemento(containerPresentacion);},3000);
 
 
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_id.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Portal de materias</title>
+</head>
+<body class="bg-secondary">
+    <div class="container container-fluid">
+        <h1 class="text-center  d-inline-flex-center rounded-3 p-2 bg-dark text-white">¡Bienvenido/a!</h1>
+        <h2 class="text-center">Te pedimos por favor que te identifiques con tu usuario y contraseña</h2>
+        <p class="text-center">(Este espacio es solamente para personal autorizado del establecimiento)</p>
+        <div class="content mx-auto bg-light rounded pb-3">
+            
+            <form id="formulario-login">
+                <div class="content__user mx-auto">
+                    <span id="error-login" class="alert alert-danger"></span>
+                    <p>
+                        <label class="fs-4" for="user">Usuario:</label>
+                        <input class="form-control" type="text" id="user">
+                    </p>
+                    <p>
+                        <label class="fs-4" for="password">Contraseña:</label>
+                        <input class="form-control" type="password" id="password">     
+                    </p>
+                    <button type="submit" class="btn btn-warning">Iniciar sesión</button>
+                    
+
+                </div>
+                
+
+            </form>
+        </div>
+
+
+    </div>
+
+    
+    <script src="login.js"></script>
+</body>
+</html>

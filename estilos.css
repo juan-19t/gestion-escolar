@@ -1,54 +1,56 @@
 body{
-    background-image: url(/escudo-fondo.png);
+    background-image: url(/fondo1.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .container{
-    /* background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); */
     height: 100%;
     width: 100%;
     border-radius: 10px;
     padding-bottom: 10px;
 }
 #guardar-cambios, #agregar-nuevo, #boton{
-    margin-top: 60px;
-    margin-left: 40%;
+    margin-top: 55px;
+    margin-left: 43%;
     margin-bottom: 30px;
+   
 }
 
 #spinner{
     visibility: hidden;
 }
 
-#presentacion{
-    position: absolute;
-    width: 70%;
-    height: 50%;
-    background-color: rgba(51, 167, 51, 0.863);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-}
-
-#container__presentacion{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(75, 69, 69, 0.5);
-}
-
 #header{
-    background-color: rgb(51, 167, 51);
-    height: 50px;
+    height: 60px;
     color: rgb(235, 235, 235);
     text-align: center;
     align-items: center;
     font-weight: bold;
     font-size: large;
+    margin-bottom: 20px;
+}
+#header_container{
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+    color:rgb(235, 235, 235);
+}
+a:hover{
+    color: white;
+}
+.table{
+    margin-top: 40px;
+    justify-content: center;
+    align-content: center;
+}
+#primeraHilera{
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#select:focus{
+    outline-color: orange;
 }

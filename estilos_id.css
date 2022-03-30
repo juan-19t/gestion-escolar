@@ -1,0 +1,27 @@
+body{
+    background-image: url(/fondo2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;   
+    height: 100%;
+}
+
+.container{
+    height: 90%;
+}
+
+.content{
+    height: auto;
+    width: 80%;
+}
+
+form{
+    height: auto;
+    margin-top: 20px;
+}
+
+.content__user{
+    width: 35%;
+    height: auto;
+    margin-top: 20px;
+}
