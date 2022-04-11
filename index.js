@@ -141,6 +141,7 @@ formulario.addEventListener("submit",(e)=>{
 
     tabla.innerHTML = '';
 for (discpilina of listaDeMaterias){
+    conteinterTabla.style.display="inline-table";
     let hilera = document.createElement("tr");
         hilera.innerHTML = `
                 
